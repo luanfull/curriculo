@@ -17,7 +17,7 @@ sudo cp -R ~/kibana-7*/* /opt/kibana/
 cd /etc/init.d && sudo wget https://github.com/luanfull/curriculo/blob/gh-pages/netflow-scprit
 sudo chmod +x /etc/init.d/kibana7
 sudo update-rc.d kibana7 defaults 96 9
-sudo service kibana4 start
+sudo service kibana7 start
 
 # Install Nginx
 

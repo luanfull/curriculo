@@ -42,10 +42,10 @@ a2enconf zabbix-frontend-php
 sed -i 's/# php_value date.timezone Europe\/Riga/php_value date.timezone America\/Sao_Paulo/g' /etc/apache2/conf-enabled/zabbix.conf
 systemctl restart apache2
 
-sudo apt-get install -y adduser libfontconfig
+sudo apt-get install -y adduser libfontconfig1
 
-wget https://dl.grafana.com/oss/release/grafana_6.2.5_amd64.deb
-sudo dpkg -i grafana_6.2.5_amd64.deb 
+wget https://dl.grafana.com/oss/release/grafana_6.6.1_amd64.deb
+sudo dpkg -i grafana_6.6.1_amd64.deb
 
 grafana-cli plugins install grafana-clock-panel
 grafana-cli plugins install alexanderzobnin-zabbix-app
@@ -59,7 +59,7 @@ iptables -A INPUT -p tcp --dport 3306 -j DROP
 touch /tmp/finish
 
 
-figlet -c ACAABOOUUUUUUUUUUU!!!
+figlet -c O MONITORAMENTO MAIS COMPLETO DO BRASIL
 iptables-save | grep 3306
 systemctl status mysql | grep Active
 systemctl status zabbix-server | grep Active
@@ -71,5 +71,34 @@ systemctl start zabbix-server
 systemctl enable zabbix-server
 systemctl status zabbix-server
 
+wget https://raw.githubusercontent.com/sansaoipb/Telegram-Graph-authenticated_Perl/master/telegram.pl
 
+wget https://raw.githubusercontent.com/luanfull/curriculo/gh-pages/BGP4-MIB
 
+wget https://raw.githubusercontent.com/librenms/librenms/master/mibs/fiberhome/GEPON-OLT-COMMON-MIB
+
+wget https://raw.githubusercontent.com/jorgeluiztaioque/check_pon_fiberhome/master/docs/FIBERHOME-GPON-MIBS.txt
+
+wget http://www.circitor.fr/Mibs/Mib/A/A3COM-HUAWEI-PPPOE-SERVER-MIB.mib
+
+wget cd /usr/lib/zabbix/externalscripts/ ; wget http://www.made4it.com.br/downdetector/down.py -O down.py 
+
+wget https://raw.githubusercontent.com/luanfull/curriculo/gh-pages/PPPoE.NE40
+
+wget http://www.circitor.fr/Mibs/Mib/A/A3COM-HUAWEI-OID-MIB.mib
+
+wget http://www.circitor.fr/Mibs/Mib/A/A3COM-HUAWEI-TRANSCEIVER-INFO-MIB.mib
+
+wget http://www.circitor.fr/Mibs/Mib/A/A3COM-HUAWEI-VLAN-MIB.mib
+
+wget http://www.circitor.fr/Mibs/Mib/A/A3COM-HUAWEI-TRAP-MIB.mib
+
+wget http://www.circitor.fr/Mibs/Mib/A/A3COM-HUAWEI-MPLS-BGP-VPN-MIB.mib
+
+wget http://www.circitor.fr/Mibs/Mib/A/A3COM-HUAWEI-IP-MIB.mib
+
+wget https://raw.githubusercontent.com/librenms/librenms/master/mibs/huawei/HUAWEI-BGP-ACCOUNTING-MIB
+
+wget https://raw.githubusercontent.com/librenms/librenms/master/mibs/BGP4-MIB
+
+wget https://raw.githubusercontent.com/pgmillon/observium/master/mibs/huawei/HUAWEI-OSPFV2-MIB

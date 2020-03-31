@@ -59,7 +59,7 @@ iptables -A INPUT -p tcp --dport 3306 -j DROP
 touch /tmp/finish
 
 
-figlet -c O MONITORAMENTO MAIS COMPLETO DO BRASIL
+figlet -c LUAN MONITORAMENTO *** O MAIS COMPLETO DO BRASIL
 iptables-save | grep 3306
 systemctl status mysql | grep Active
 systemctl status zabbix-server | grep Active

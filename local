@@ -22,5 +22,23 @@
     "name" : "SW6730-Caem",
     "latitude" : -11.092294460976719, 
     "longitude" : -40.43384339547229
+    },
+  {
+    "key" : "PI",
+    "name" : "SW6730-Pindobaçu",
+    "latitude" : -10.745092162509907, 
+    "longitude" : -40.36276991576892
+    },
+  {
+    "key" : "SA",
+    "name" : "SW6730-Saúde",
+    "latitude" : -10.940501516259625, 
+    "longitude" : -40.41998494760507
+    },
+  {
+    "key" : "CA",
+    "name" : "SW6730-Campo Formoso",
+    "latitude" : -10.508478259893893,
+    "longitude" : -40.3203118729436
   }
 ]

@@ -13,8 +13,14 @@
     },
   {
     "key" : "JA",
-    "name" : "Data Center",
-    "latitude" : -10.257448,
-    "longitude" : 40.191522
+    "name" : "SW6730-Jaguarari",
+    "latitude" : -10.257539422805534, 
+    "longitude" : -40.19139437216633
+    },
+  {
+    "key" : "JA",
+    "name" : "SW6730-Caem",
+    "latitude" : -11.090074, 
+    "longitude" : -40.432236
   }
 ]

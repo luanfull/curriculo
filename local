@@ -10,5 +10,11 @@
     "name" : "Data Center",
     "latitude" : -10.447646907805765,
     "longitude" : -40.179918026291915
+    },
+  {
+    "key" : "JA",
+    "name" : "Data Center",
+    "latitude" : -10.257448,
+    "longitude" : 40.191522
   }
 ]

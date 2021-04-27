@@ -45,6 +45,12 @@
     "key" : "JU",
     "name" : "SW6730-Juazeiro",
     "latitude" : -9.41197895920426,
-    "longitude" : -40.50122725746928     
+    "longitude" : -40.50122725746928
+    },
+  {
+    "key" : "MA",                          
+    "name" : "SW6730-Massaroca", 
+    "latitude" : -9.877461581136341,
+    "longitude" : -40.28554422729116
   }
 ]

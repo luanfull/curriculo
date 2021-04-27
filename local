@@ -39,6 +39,12 @@
     "key" : "CF",
     "name" : "SW6730-Campo Formoso",
     "latitude" : -10.508478259893893,
-    "longitude" : -40.3203118729436
+    "longitude" : -40.3203118729436  
+     },
+  {
+    "key" : "JU",
+    "name" : "SW6730-Juazeiro",
+    "latitude" : -9.41197895920426,
+    "longitude" : -40.50122725746928     
   }
 ]

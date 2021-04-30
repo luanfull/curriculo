@@ -52,5 +52,11 @@
     "name" : "SW6730-Massaroca", 
     "latitude" : -9.877461581136341,
     "longitude" : -40.28554422729116
-  }
+        },
+  {
+    "key" : "PA",                          
+    "name" : "DATACOM-Pilar", 
+    "latitude" : -9.884366725863018,
+    "longitude" : -39.965901300085044
+  }  
 ]

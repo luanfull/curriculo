@@ -6,8 +6,8 @@ sudo apt-get install -y linux-headers-generic build-essential dkms && \
 apt install screen figlet toilet cowsay -y > /dev/null
 rm /tmp/finish
 figlet -c LLI Monitoring Provider
-wget https://repo.zabbix.com/zabbix/5.2/ubuntu/pool/main/z/zabbix-release/zabbix-release_5.2-1+ubuntu18.04_all.deb
-dpkg -i zabbix-release_5.2-1+ubuntu18.04_all.deb
+wget https://repo.zabbix.com/zabbix/5.4/ubuntu/pool/main/z/zabbix-release/zabbix-release_5.4-1+ubuntu18.04_all.deb
+dpkg -i zabbix-release_5.4-1+ubuntu18.04_all.deb
 apt update
 apt install build-essential module-assistant
 apt install locales 
@@ -19,7 +19,7 @@ apt install zabbix-server-mysql zabbix-frontend-php zabbix-agent -y
 apt install apache2 -y
 apt install php php-cgi libapache2-mod-php php-common php-pear php-mbstring -y
 apt install mariadb-server -y
-apt install zabbix-server-mysql zabbix-frontend-php zabbix-apache-conf zabbix-agent php-gd php-xml-util php-bcmath php-net-socket php-gettext -y
+apt install zabbix-server-mysql zabbix-frontend-php zabbix-apache-conf zabbix-sql-scripts zabbix-agent php-gd php-xml-util php-bcmath php-net-socket php-gettext -y
 apt install nmap -y
 apt install snmp -y 
 apt install snmp-mibs-downloader -y
@@ -34,7 +34,7 @@ mysql -uroot -e "SHOW DATABASES";
 mysql -uroot -e "SELECT host, user FROM mysql.user";
 mysql -uroot -e "SHOW GRANTS FOR 'zabbix'@'localhost'";
 
-zcat /usr/share/doc/zabbix-server-mysql*/create.sql.gz | mysql -uzabbix -p zabbix
+zcat /usr/share/doc/zabbix-sql-scripts/mysql/create.sql.gz | mysql -uzabbix -p zabbix
 
 apt install -y apache2 php7.0
 > /var/www/html/index.html

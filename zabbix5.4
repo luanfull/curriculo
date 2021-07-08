@@ -6,8 +6,8 @@ sudo apt-get install -y linux-headers-generic build-essential dkms && \
 apt install screen figlet toilet cowsay -y > /dev/null
 rm /tmp/finish
 figlet -c LLI Monitoring Provider
-wget https://repo.zabbix.com/zabbix/5.4/ubuntu/pool/main/z/zabbix-release/zabbix-release_5.4-1+ubuntu18.04_all.deb
-dpkg -i zabbix-release_5.4-1+ubuntu18.04_all.deb
+wget https://repo.zabbix.com/zabbix/5.2/ubuntu/pool/main/z/zabbix-release/zabbix-release_5.2-1+ubuntu18.04_all.deb
+dpkg -i zabbix-release_5.2-1+ubuntu18.04_all.deb
 apt update
 apt install build-essential module-assistant
 apt install locales 
@@ -34,7 +34,7 @@ mysql -uroot -e "SHOW DATABASES";
 mysql -uroot -e "SELECT host, user FROM mysql.user";
 mysql -uroot -e "SHOW GRANTS FOR 'zabbix'@'localhost'";
 
-zcat /usr/share/doc/zabbix-sql-scripts/mysql/create.sql.gz | mysql -uzabbix -p zabbix
+zcat /usr/share/doc/zabbix-server-mysql*/create.sql.gz | mysql -uzabbix -p zabbix
 
 apt install -y apache2 php7.0
 > /var/www/html/index.html
